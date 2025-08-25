@@ -5,33 +5,33 @@ export const TechnologySection = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI Driven",
-      description: "Advanced AI models enabling unprecedented automation capabilities"
+      title: "ROS2 Perception System",
+      description: "Custom perception & locomotion system with trained RL models for walking"
     },
     {
       icon: Eye,
-      title: "Perception Optimized", 
-      description: "LiDAR, IMU, RGBD camera and BioSense Nose for comprehensive sensing"
+      title: "Advanced Camera/LIDAR", 
+      description: "In-house developed vision systems for precision navigation and mapping"
     },
     {
       icon: Zap,
-      title: "User-Friendly",
-      description: "Intuitive interfaces making robotics accessible to everyone"
+      title: "50+kg Payload",
+      description: "Heavy-duty capacity that humanoids cannot achieve due to support polygon limits"
     },
     {
       icon: Shield,
-      title: "Durable and Agile",
-      description: "Built to withstand industrial environments while maintaining agility"
+      title: "Vertically Integrated",
+      description: "Every aspect of design and software developed in-house for optimal performance"
     },
     {
       icon: Battery,
-      title: "Long lasting Power",
-      description: "Extended battery life for continuous operation"
+      title: "Complex Environment Navigation",
+      description: "Four-legged-wheeled design navigates where wheeled platforms cannot"
     },
     {
       icon: Wrench,
-      title: "Ready to Go",
-      description: "Plug-and-play solution with minimal setup required"
+      title: "Manufacturing Ready",
+      description: "RBW welding arm integration with full-body sensing and motion planning"
     }
   ];
 
@@ -40,11 +40,11 @@ export const TechnologySection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Building the Future of <span className="gradient-text">Physical AI</span>
+            Physical AI Infrastructure for the <span className="gradient-text">Trillion Dollar Industrial Economy</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Designing the next-gen of robotics from the actuator-up. Creating a future where intelligent 
-            mobile robots are as ubiquitous and accessible as smartphones.
+            Vertically integrated design and software. From advanced camera/LIDAR perception to specifically trained RL models for walking, 
+            we build every component in-house to scale autonomous metalworking platforms.
           </p>
         </div>
         

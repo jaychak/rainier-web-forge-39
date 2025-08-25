@@ -6,8 +6,11 @@ export const SolutionSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Rainier Labs: <span className="gradient-text">The Solution</span>
+            Solving the <span className="gradient-text">Core Physics Problem</span>
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 50+kg whilst navigating complex environments wheeled platforms cannot.
+          </p>
         </div>
         
         <div className="max-w-6xl mx-auto">
@@ -21,29 +24,29 @@ export const SolutionSection = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">Physical AI Stack</h3>
-              <p className="text-muted-foreground text-sm">Quadruped + Unique Sensor payloads + AI + Industrial Platform Integrations</p>
+              <h3 className="text-lg font-semibold mb-2 gradient-text">3D Site Mapping</h3>
+              <p className="text-muted-foreground text-sm">Gaussian Splatting models creating CAD-importable 3D environments</p>
             </CardContent>
           </Card>
           
           <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">AI-Brain with VLA</h3>
-              <p className="text-muted-foreground text-sm">Vision-Language-Action model for full robot autonomy</p>
+              <h3 className="text-lg font-semibold mb-2 gradient-text">Engineer Markup</h3>
+              <p className="text-muted-foreground text-sm">Technician markup of welding seams and manufacturing tasks</p>
             </CardContent>
           </Card>
           
           <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">'e-Nose' Technology</h3>
-              <p className="text-muted-foreground text-sm">Particulate matter sensing capabilities beyond competitors</p>
+              <h3 className="text-lg font-semibold mb-2 gradient-text">Autonomous Execution</h3>
+              <p className="text-muted-foreground text-sm">Safety-first autonomous operation alongside human co-workers</p>
             </CardContent>
           </Card>
           
           <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">Robot as a Service</h3>
-              <p className="text-muted-foreground text-sm">RaaS model eliminating high upfront costs</p>
+              <h3 className="text-lg font-semibold mb-2 gradient-text">50+kg Payload</h3>
+              <p className="text-muted-foreground text-sm">Heavy-duty precision metalworking in mobile autonomous platform</p>
             </CardContent>
           </Card>
         </div>

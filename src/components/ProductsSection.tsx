@@ -9,11 +9,10 @@ export const ProductsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Meet <span className="gradient-text">Terrier</span>
+            Meet <span className="gradient-text">Centaur</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our robotic dog designed for lab, industry & home applications. 
-            Advanced sensing capabilities in a durable, agile platform.
+            Our autonomous manufacturing platform. Four-legged-wheeled design with 50+kg payload for heavy-duty precision metalworking in complex environments.
           </p>
         </div>
         
@@ -26,30 +25,30 @@ export const ProductsSection = () => {
                     Available Q4 2025
                   </Badge>
                   
-                  <h3 className="text-3xl font-bold mb-4">Terrier Robot Dog</h3>
+                  <h3 className="text-3xl font-bold mb-4">Centaur Manufacturing Platform</h3>
                   
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span>Sees and senses in the dark with LiDAR, IMU, RGBD camera</span>
+                      <span>50+kg payload capacity with four-legged-wheeled mobility</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span>BioSense Nose for advanced environmental detection</span>
+                      <span>ROS2-based custom perception & locomotion system</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span>Durable construction for industrial environments</span>
+                      <span>Integrated welding arms and precision manufacturing tools</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span>AI-powered autonomous navigation</span>
+                      <span>Full-body sensing and motion planning for complex environments</span>
                     </div>
                   </div>
                   
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                      Reserve for $99 <ExternalLink className="ml-2 h-4 w-4" />
+                      Reserve Centaur <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
                     <Button variant="outline" size="lg" className="border-border hover:bg-muted">
                       <Download className="mr-2 h-4 w-4" />
@@ -68,7 +67,7 @@ export const ProductsSection = () => {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent rounded-lg flex items-end p-6">
                     <div className="text-sm text-muted-foreground">
-                      Terrier Robot - Coming Q4 2025
+                      Centaur Manufacturing Platform - Revolutionizing Metalwork
                     </div>
                   </div>
                 </div>
