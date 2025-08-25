@@ -4,8 +4,16 @@ import { useState, useRef, useEffect } from "react";
 
 export const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+  
+  const videoSources = [
+    "/videos/welding1_.mp4",
+    "/videos/welding2_.mp4", 
+    "/videos/welding3_.mp4",
+    "/videos/welding4_.mp4"
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,6 +45,15 @@ export const VideoSection = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleVideoEnd = () => {
+    if (currentVideoIndex < videoSources.length - 1) {
+      setCurrentVideoIndex(currentVideoIndex + 1);
+    } else {
+      // Loop back to first video
+      setCurrentVideoIndex(0);
+    }
+  };
+
   const togglePlay = () => {
     if (videoRef.current) {
       if (isPlaying) {
@@ -53,10 +70,10 @@ export const VideoSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Terrier in Action</span>
+            <span className="gradient-text">Autonomous Welding in Action</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch Terrier navigate complex indoor and outdoor environments with precision and intelligence
+            Watch our Centaur platform perform precision autonomous welding operations in real manufacturing environments
           </p>
         </div>
         
@@ -64,27 +81,32 @@ export const VideoSection = () => {
           <div className="relative rounded-xl overflow-hidden shadow-2xl bg-card">
             <video
               ref={videoRef}
+              key={currentVideoIndex}
               className="w-full h-auto"
               controls
               autoPlay
               muted
-              loop
               playsInline
               onPlay={() => {
-                console.log('Video started playing');
+                console.log(`Video ${currentVideoIndex + 1} started playing`);
                 setIsPlaying(true);
               }}
               onPause={() => {
                 console.log('Video paused');
                 setIsPlaying(false);
               }}
-              onLoadedData={() => console.log('Video loaded successfully')}
+              onEnded={handleVideoEnd}
+              onLoadedData={() => console.log(`Video ${currentVideoIndex + 1} loaded successfully`)}
               onError={(e) => console.log('Video error:', e)}
               poster="/lovable-uploads/7296d4ba-8b2b-4724-835c-cd1f39b14441.png"
             >
-              <source src={`/videos/terrierOperations.mp4?v=${Date.now()}`} type="video/mp4" />
+              <source src={`${videoSources[currentVideoIndex]}?v=${Date.now()}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            
+            <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-md text-sm">
+              Video {currentVideoIndex + 1} of {videoSources.length}
+            </div>
             
             {!isPlaying && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -101,7 +123,7 @@ export const VideoSection = () => {
           
           <div className="text-center mt-8">
             <p className="text-muted-foreground">
-              See how Terrier's advanced AI enables autonomous operation across diverse environments
+              Autonomous welding sequence demonstrating precision metalworking capabilities in real environments
             </p>
           </div>
         </div>
