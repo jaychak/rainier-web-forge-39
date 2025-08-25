@@ -6,11 +6,11 @@ export const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/87990a21-52eb-48d1-8c41-848759b54e66.png"
-          alt="Rainier Labs Robot in Industrial Setting"
+          src="/lovable-uploads/03de9bbc-5b79-4b1f-93d1-e5bcba1877be.png"
+          alt="Centaur Autonomous Manufacturing Robot"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/25"></div>
+        <div className="absolute inset-0 bg-background/40"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
