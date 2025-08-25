@@ -10,7 +10,7 @@ export const Hero = () => {
           alt="Centaur Autonomous Manufacturing Robot"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/40"></div>
+        <div className="absolute inset-0 bg-background/20"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
