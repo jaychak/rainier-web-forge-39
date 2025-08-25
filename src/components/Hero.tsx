@@ -1,16 +1,42 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 
 export const Hero = () => {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const videoSources = [
+    "/videos/welding1_.mp4",
+    "/videos/welding2_.mp4",
+    "/videos/welding3_.mp4",
+    "/videos/welding4_.mp4"
+  ];
+
+  const handleVideoEnd = () => {
+    if (currentVideoIndex < videoSources.length - 1) {
+      setCurrentVideoIndex(currentVideoIndex + 1);
+    } else {
+      setCurrentVideoIndex(0);
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/03de9bbc-5b79-4b1f-93d1-e5bcba1877be.png"
-          alt="Centaur Autonomous Manufacturing Robot"
+        <video
+          ref={videoRef}
+          key={currentVideoIndex}
           className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/5"></div>
+          autoPlay
+          muted
+          playsInline
+          onEnded={handleVideoEnd}
+          onError={() => console.log('Video error, falling back to image')}
+        >
+          <source src={videoSources[currentVideoIndex]} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/30"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
