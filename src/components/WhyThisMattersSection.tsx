@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 
 export const WhyThisMattersSection = () => {
+  console.log("WhyThisMattersSection is rendering");
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
