@@ -85,7 +85,7 @@ export const OurStorySection = () => {
                   console.error("Our Story video error:", e);
                 }}
               >
-                <source src={`/videos/terrierStory.mp4?v=${Date.now()}`} type="video/mp4" />
+                <source src={`/videos/leggedRobotStory.mp4?v=${Date.now()}`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
