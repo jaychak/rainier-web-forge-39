@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 
@@ -6,6 +6,28 @@ export const WhyThisMattersSection = () => {
   console.log("WhyThisMattersSection is rendering");
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && videoRef.current) {
+            videoRef.current.play().catch(() => {
+              console.log("Autoplay prevented by browser");
+            });
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -19,7 +41,7 @@ export const WhyThisMattersSection = () => {
   };
 
   return (
-    <section className="py-20">
+    <section ref={sectionRef} className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -32,9 +54,11 @@ export const WhyThisMattersSection = () => {
             <video
               ref={videoRef}
               className="w-full h-auto"
-              controls
+              autoPlay
               muted
+              loop
               playsInline
+              controls
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
             >
