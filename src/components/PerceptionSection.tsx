@@ -78,7 +78,7 @@ export const PerceptionSection = () => {
               onLoadedData={() => console.log('Perception video loaded successfully')}
               onError={(e) => console.log('Perception video error:', e)}
             >
-              <source src={`/videos/slamHeatmap.mp4?v=${Date.now()}`} type="video/mp4" />
+              <source src={`/videos/autNav.mp4?v=${Date.now()}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
