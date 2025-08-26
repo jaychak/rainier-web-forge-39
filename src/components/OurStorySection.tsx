@@ -55,7 +55,7 @@ export const OurStorySection = () => {
               Our Story
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover the evolution of Terrier's design and engineering from the very beginning - 
+              Discover the evolution of our design and engineering from the very beginning - 
               a journey of innovation, challenges, and breakthrough solutions.
             </p>
           </div>
