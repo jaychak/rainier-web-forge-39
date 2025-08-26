@@ -18,7 +18,7 @@ export const SolutionSection = () => {
         
         <div className="max-w-6xl mx-auto">
           <img 
-            src="/lovable-uploads/37545d75-27d4-4603-8f10-5f6862868a86.png"
+            src="/lovable-uploads/c0bcc0cd-4b50-40d4-8239-a4fc0b392506.png"
             alt="Physics comparison showing quadruped vs humanoid support polygon and load-bearing capabilities"
             className="w-full h-auto rounded-lg shadow-2xl"
           />
