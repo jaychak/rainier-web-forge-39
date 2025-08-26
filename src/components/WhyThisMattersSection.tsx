@@ -13,20 +13,29 @@ export const WhyThisMattersSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && videoRef.current) {
-            videoRef.current.play().catch(() => {
-              console.log("Autoplay prevented by browser");
+            console.log("Why This Matters video section is in view, attempting autoplay...");
+            videoRef.current.play().then(() => {
+              console.log("Why This Matters video autoplay successful");
+            }).catch((error) => {
+              console.log("Why This Matters video autoplay failed:", error);
             });
           }
         });
       },
-      { threshold: 0.5 }
+      {
+        threshold: 0.5,
+      }
     );
 
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
   }, []);
 
   const togglePlay = () => {
@@ -59,10 +68,22 @@ export const WhyThisMattersSection = () => {
               loop
               playsInline
               controls
-              onPlay={() => setIsPlaying(true)}
-              onPause={() => setIsPlaying(false)}
+              onPlay={() => {
+                setIsPlaying(true);
+                console.log("Why This Matters video started playing");
+              }}
+              onPause={() => {
+                setIsPlaying(false);
+                console.log("Why This Matters video paused");
+              }}
+              onLoadedData={() => {
+                console.log("Why This Matters video loaded successfully");
+              }}
+              onError={(e) => {
+                console.error("Why This Matters video error:", e);
+              }}
             >
-              <source src="/videos/whyMatters.mp4" type="video/mp4" />
+              <source src={`/videos/whyMatters.mp4?v=${Date.now()}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
