@@ -15,7 +15,7 @@ export const SolutionSection = () => {
         
         <div className="max-w-6xl mx-auto">
           <img 
-            src="/lovable-uploads/10c071d4-2fdd-45af-8314-d1cde7be9209.png"
+            src="/lovable-uploads/21a57b8d-e8f9-4b4f-ab92-bd75c370fb62.png"
             alt="Rainier Labs Solution Overview"
             className="w-full h-auto rounded-lg shadow-2xl"
           />
