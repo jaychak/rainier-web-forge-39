@@ -6,17 +6,20 @@ export const SolutionSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Solving the <span className="gradient-text">Core Physics Problem</span>
+            The <span className="gradient-text">Physics Advantage</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
             Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 50+kg whilst navigating complex environments wheeled platforms cannot.
+          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            Our 4-legged-wheeled design - Centaur's support polygon (blue) is 4x larger than humanoid footprints (orange), keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
           </p>
         </div>
         
         <div className="max-w-6xl mx-auto">
           <img 
-            src="/lovable-uploads/21a57b8d-e8f9-4b4f-ab92-bd75c370fb62.png"
-            alt="Rainier Labs Solution Overview"
+            src="/lovable-uploads/37545d75-27d4-4603-8f10-5f6862868a86.png"
+            alt="Physics comparison showing quadruped vs humanoid support polygon and load-bearing capabilities"
             className="w-full h-auto rounded-lg shadow-2xl"
           />
         </div>
