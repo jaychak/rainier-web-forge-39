@@ -67,7 +67,7 @@ export const WhyThisMattersSection = () => {
                   From Assembly Lines to Anywhere
                 </span>
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/80 leading-relaxed">
                 For a century, manufacturing meant bringing parts to robots. This works for factories, but fails for the real world—shipyards, construction sites, custom installations.
               </p>
               <p className="text-xl font-semibold text-primary mt-4">
@@ -81,7 +81,7 @@ export const WhyThisMattersSection = () => {
                   <span className="w-3 h-3 bg-destructive rounded-full mr-3"></span>
                   The Problem Today
                 </h4>
-                <ul className="space-y-3 text-muted-foreground">
+                <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-start">
                     <span className="text-destructive mr-2">•</span>
                     Fixed robots need controlled environments
@@ -102,7 +102,7 @@ export const WhyThisMattersSection = () => {
                   <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
                   The Solution
                 </h4>
-                <div className="space-y-3 text-muted-foreground">
+                <div className="space-y-3 text-foreground/80">
                   <div className="flex items-center text-sm">
                     <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">1</span>
                     Upload 3D site models
