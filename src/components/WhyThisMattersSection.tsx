@@ -99,6 +99,84 @@ export const WhyThisMattersSection = () => {
               </div>
             )}
           </div>
+          
+          {/* New content section */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20">
+              <div className="text-center mb-12">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                  <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    From Assembly Lines to Anywhere
+                  </span>
+                </h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  For a century, manufacturing meant bringing parts to robots. This works for factories, but fails for the real world—shipyards, construction sites, custom installations.
+                </p>
+                <p className="text-xl font-semibold text-primary mt-4">
+                  Our L4 autonomy changes everything: bring robots to parts.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="bg-destructive/10 rounded-xl p-6 border border-destructive/20">
+                  <h4 className="text-xl font-bold text-destructive mb-4 flex items-center">
+                    <span className="w-3 h-3 bg-destructive rounded-full mr-3"></span>
+                    The Problem Today
+                  </h4>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="text-destructive mr-2">•</span>
+                      Fixed robots need controlled environments
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-destructive mr-2">•</span>
+                      500,000 unfilled manufacturing jobs
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-destructive mr-2">•</span>
+                      High-mix, low-volume work stays manual
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
+                  <h4 className="text-xl font-bold text-primary mb-4 flex items-center">
+                    <span className="w-3 h-3 bg-primary rounded-full mr-3"></span>
+                    The Solution
+                  </h4>
+                  <div className="space-y-3 text-muted-foreground">
+                    <div className="flex items-center text-sm">
+                      <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">1</span>
+                      Upload 3D site models
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">2</span>
+                      Engineers mark tasks digitally
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">3</span>
+                      Centaur executes autonomously
+                    </div>
+                    <div className="flex items-center text-sm">
+                      <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">4</span>
+                      Safe human coexistence
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 border border-primary/30">
+                  <p className="text-lg font-semibold text-foreground mb-2">
+                    <span className="text-primary">Result:</span> Manufacturing anywhere, managed by fewer specialists, at industrial scale.
+                  </p>
+                  <p className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    This is 21st century manufacturing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
