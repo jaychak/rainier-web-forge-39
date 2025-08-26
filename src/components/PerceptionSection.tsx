@@ -53,7 +53,7 @@ export const PerceptionSection = () => {
             <span className="gradient-text">Advanced Perception</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Watch Terrier's real-time LIDAR mapping and environmental monitoring in action, creating detailed heatmaps of gaseous and particulate matter
+            Real-time camera-LIDAR fusion creates detailed maps of the environment for the manufacturing robot to navigate autonomously on the shop floor
           </p>
         </div>
         
