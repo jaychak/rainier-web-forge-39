@@ -31,7 +31,7 @@ export const TechnologySection = () => {
     {
       icon: Wrench,
       title: "Manufacturing Ready",
-      description: "RBW welding arm integration with full-body sensing and motion planning"
+      description: "Welding/grinding tooltip + arm integration with full-body sensing and motion planning"
     }
   ];
 
