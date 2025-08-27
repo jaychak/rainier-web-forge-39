@@ -4,7 +4,7 @@ export const ApplicationsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Autonomous Metalworking</span> Verticals
+            <span className="gradient-text">Multiple</span> Verticals
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             High-mix, low-volume manufacturing where mobile autonomous metalworking shines. 
