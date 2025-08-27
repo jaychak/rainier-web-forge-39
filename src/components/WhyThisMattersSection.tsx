@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 
+
 export const WhyThisMattersSection = () => {
   console.log("WhyThisMattersSection is rendering");
   const [isPlaying, setIsPlaying] = useState(false);
@@ -56,6 +57,17 @@ export const WhyThisMattersSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Point and Click Manufacturing</span>
           </h2>
+        </div>
+        
+        {/* Workflow diagram */}
+        <div className="mb-16 max-w-6xl mx-auto">
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 border border-primary/20">
+            <img 
+              src="/lovable-uploads/60160021-fe00-4fa5-881f-4f6d2dc6fe6b.png" 
+              alt="AI-driven Point-and-Click Metal-working Stack workflow showing 3D reality capture, markup in CAD, and autonomous welding"
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
         </div>
         
         {/* Text content section - moved above video */}
