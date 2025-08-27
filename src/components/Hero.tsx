@@ -45,7 +45,7 @@ export const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                 <span className="gradient-text" style={{ textShadow: 'none' }}>L4 Autonomy</span>
                 <br />
-                for 21st Century Metal-Working
+                for 21st Century Metalworking
               </h1>
               
               <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
