@@ -20,7 +20,7 @@ export const SolutionSection = () => {
                 </span>
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 50+kg whilst navigating complex environments wheeled platforms cannot.
+                Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 250+kg whilst navigating complex environments wheeled platforms cannot.
               </p>
             </div>
 
@@ -54,7 +54,7 @@ export const SolutionSection = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
-                    50+kg payload capacity
+                    250+kg payload capacity
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2">•</span>
@@ -110,7 +110,7 @@ export const SolutionSection = () => {
           
           <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">50+kg Payload</h3>
+              <h3 className="text-lg font-semibold mb-2 gradient-text">250+kg Payload</h3>
               <p className="text-muted-foreground text-sm">Heavy-duty precision metalworking in mobile autonomous platform</p>
             </CardContent>
           </Card>

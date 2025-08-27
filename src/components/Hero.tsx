@@ -61,7 +61,7 @@ export const Hero = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold gradient-text mb-2">50+kg</div>
+              <div className="text-4xl font-bold gradient-text mb-2">250+kg</div>
               <div className="text-muted-foreground">Payload Capacity</div>
             </div>
             <div className="text-center">

@@ -15,7 +15,7 @@ export const TechnologySection = () => {
     },
     {
       icon: Zap,
-      title: "50+kg Payload",
+      title: "250+kg Payload",
       description: "Heavy-duty capacity that humanoids cannot achieve due to support polygon limits"
     },
     {

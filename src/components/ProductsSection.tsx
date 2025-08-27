@@ -12,7 +12,7 @@ export const ProductsSection = () => {
             Meet <span className="gradient-text">Centaur</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our autonomous manufacturing platform. Four-legged-wheeled design with 50+kg payload for heavy-duty precision metalworking in complex environments.
+            Our autonomous manufacturing platform. Four-legged-wheeled design with 250+kg payload for heavy-duty precision metalworking in complex environments.
           </p>
         </div>
         
@@ -30,7 +30,7 @@ export const ProductsSection = () => {
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span>50+kg payload capacity with four-legged-wheeled mobility</span>
+                      <span>250+kg payload capacity with four-legged-wheeled mobility</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
