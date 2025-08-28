@@ -80,8 +80,8 @@ export const SolutionSection = () => {
         
         <div className="max-w-6xl mx-auto">
           <img 
-            src="/lovable-uploads/c0bcc0cd-4b50-40d4-8239-a4fc0b392506.png"
-            alt="Physics comparison showing quadruped vs humanoid support polygon and load-bearing capabilities"
+            src="/lovable-uploads/5ce270f4-5558-4bbc-8b22-178e2d548355.png"
+            alt="Why a Quadruped Outperforms a Humanoid for Industrial Load Carrying - Greater stability and larger support polygon"
             className="w-full h-auto rounded-lg shadow-2xl"
           />
         </div>
