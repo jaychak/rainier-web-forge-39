@@ -68,22 +68,22 @@ export const SolutionSection = () => {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center mb-8">
               <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 border border-primary/30">
                 <p className="text-lg font-semibold text-foreground">
                   <span className="text-primary">Centaur's support polygon (blue)</span> is 4x larger than humanoid footprints (orange), keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
                 </p>
               </div>
             </div>
+
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/5ce270f4-5558-4bbc-8b22-178e2d548355.png"
+                alt="Why a Quadruped Outperforms a Humanoid for Industrial Load Carrying - Greater stability and larger support polygon"
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+            </div>
           </div>
-        </div>
-        
-        <div className="max-w-6xl mx-auto">
-          <img 
-            src="/lovable-uploads/5ce270f4-5558-4bbc-8b22-178e2d548355.png"
-            alt="Why a Quadruped Outperforms a Humanoid for Industrial Load Carrying - Greater stability and larger support polygon"
-            className="w-full h-auto rounded-lg shadow-2xl"
-          />
         </div>
         
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
