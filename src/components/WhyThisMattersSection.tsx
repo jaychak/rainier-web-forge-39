@@ -94,20 +94,20 @@ export const WhyThisMattersSection = () => {
                   <span className="w-3 h-3 bg-destructive rounded-full mr-3"></span>
                   The Problem Today
                 </h4>
-                <ul className="space-y-3 text-foreground/80">
-                  <li className="flex items-start">
-                    <span className="text-destructive mr-2">•</span>
-                    Fixed robots need controlled environments
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-destructive mr-2">•</span>
-                    500,000 unfilled manufacturing jobs
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-destructive mr-2">•</span>
-                    High-mix, low-volume work stays manual
-                  </li>
-                </ul>
+                <div className="space-y-4 text-foreground/80">
+                  <div>
+                    <h5 className="font-semibold text-destructive mb-1">Robots can't go where the work is</h5>
+                    <p className="text-sm">Traditional industrial robots are fixed to factory floors - useless in shipyards, construction sites, and real-world manufacturing environments</p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-destructive mb-1">Half a million missing metalworkers</h5>
+                    <p className="text-sm">500,000 unfilled welding and metalworking jobs across America, with skilled workers retiring faster than replacements arrive</p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-destructive mb-1">Complex projects stay stuck in the past</h5>
+                    <p className="text-sm">Custom fabrication, ship construction, and infrastructure work still relies on human welders working in dangerous, repetitive conditions</p>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
@@ -116,21 +116,33 @@ export const WhyThisMattersSection = () => {
                   The Solution
                 </h4>
                 <div className="space-y-3 text-foreground/80">
-                  <div className="flex items-center text-sm">
-                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">1</span>
-                    Upload 3D site models
+                  <div className="flex items-start text-sm">
+                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5">1</span>
+                    <div>
+                      <h5 className="font-semibold text-primary mb-1">Scan any worksite in 3D</h5>
+                      <p>Create precise digital twins of ships, construction sites, or industrial facilities using advanced sensing</p>
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">2</span>
-                    Engineers mark tasks digitally
+                  <div className="flex items-start text-sm">
+                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5">2</span>
+                    <div>
+                      <h5 className="font-semibold text-primary mb-1">Point and click to assign work</h5>
+                      <p>Engineers mark welding paths, grinding areas, and metalworking tasks directly on the 3D model from anywhere</p>
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">3</span>
-                    Centaur executes autonomously
+                  <div className="flex items-start text-sm">
+                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5">3</span>
+                    <div>
+                      <h5 className="font-semibold text-primary mb-1">Centaur navigates and executes</h5>
+                      <p>Mobile robot carries 150kg+ tools, climbs over obstacles, and performs precision metalwork autonomously</p>
+                    </div>
                   </div>
-                  <div className="flex items-center text-sm">
-                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3">4</span>
-                    Safe human coexistence
+                  <div className="flex items-start text-sm">
+                    <span className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-0.5">4</span>
+                    <div>
+                      <h5 className="font-semibold text-primary mb-1">Works safely alongside humans</h5>
+                      <p>Continuous monitoring and collision avoidance enable mixed human-robot worksites</p>
+                    </div>
                   </div>
                 </div>
               </div>
