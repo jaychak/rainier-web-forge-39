@@ -86,34 +86,42 @@ export const SolutionSection = () => {
           </div>
         </div>
         
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">3D Site Mapping</h3>
-              <p className="text-muted-foreground text-sm">Gaussian Splatting models creating CAD-importable 3D environments</p>
-            </CardContent>
-          </Card>
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="gradient-text">Point and Click Manufacturing</span>
+            </h3>
+          </div>
           
-          <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">Engineer Markup</h3>
-              <p className="text-muted-foreground text-sm">Technician markup of welding seams and manufacturing tasks</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">Autonomous Execution</h3>
-              <p className="text-muted-foreground text-sm">Safety-first autonomous operation alongside human co-workers</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold mb-2 gradient-text">250+kg Payload</h3>
-              <p className="text-muted-foreground text-sm">Heavy-duty precision metalworking in mobile autonomous platform</p>
-            </CardContent>
-          </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-2 gradient-text">3D Site Mapping</h3>
+                <p className="text-muted-foreground text-sm">Gaussian Splatting models creating CAD-importable 3D environments</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-2 gradient-text">Engineer Markup</h3>
+                <p className="text-muted-foreground text-sm">Technician markup of welding seams and manufacturing tasks</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-2 gradient-text">Autonomous Execution</h3>
+                <p className="text-muted-foreground text-sm">Safety-first autonomous operation alongside human co-workers</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-gradient-to-br from-card to-muted/20 border-border">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-2 gradient-text">250+kg Payload</h3>
+                <p className="text-muted-foreground text-sm">Heavy-duty precision metalworking in mobile autonomous platform</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
