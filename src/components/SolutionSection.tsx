@@ -71,7 +71,7 @@ export const SolutionSection = () => {
             <div className="text-center mb-8">
               <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 border border-primary/30">
                 <p className="text-lg font-semibold text-foreground">
-                  <span className="text-primary">Centaur's support polygon (blue)</span> is 4x larger than humanoid footprints (orange), keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
+                  Centaur's support polygon is greater than 4x larger than humanoid footprints, keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
                 </p>
               </div>
             </div>
