@@ -42,7 +42,7 @@ export const AboutSection = () => {
             
             <p>
               This is vital as businesses worldwide contend with labor shortages and the complexities 
-              of compliance. With manufacturing shifting towards the US and India, and the dawn of AGI, 
+              of compliance. With manufacturing reshoring to the US, and the dawn of AGI, 
               physical AI is the clear next leap.
             </p>
             
