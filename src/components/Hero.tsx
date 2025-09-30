@@ -1,42 +1,43 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import CentaurWeldGrind from "@/assets/CentaurWeldGrind.png";
+import CentaurDrill from "@/assets/CentaurDrill.png";
+import CentaurRivet from "@/assets/CentaurRivet.png";
 
 export const Hero = () => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const videoSources = [
-    "/videos/welding1_.mp4",
-    "/videos/welding2_.mp4", 
-    "/videos/welding3_.mp4",
-    "/videos/welding4_.mp4"
+  const images = [
+    CentaurWeldGrind,
+    CentaurDrill,
+    CentaurRivet
   ];
 
-  const handleVideoEnd = () => {
-    if (currentVideoIndex < videoSources.length - 1) {
-      setCurrentVideoIndex(currentVideoIndex + 1);
-    } else {
-      setCurrentVideoIndex(0);
-    }
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
-      {/* Video Section with Text Overlay */}
+      {/* Image Section with Text Overlay */}
       <section id="home" className="h-screen relative overflow-hidden">
-        <video
-          ref={videoRef}
-          key={currentVideoIndex}
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          playsInline
-          onEnded={handleVideoEnd}
-          onError={() => console.log('Video error:', videoSources[currentVideoIndex])}
-        >
-          <source src={videoSources[currentVideoIndex]} type="video/mp4" />
-        </video>
+        <div className="absolute inset-0">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Centaur robot ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ))}
+        </div>
         
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-center bg-black/30">
