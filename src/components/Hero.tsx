@@ -67,7 +67,7 @@ export const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold gradient-text mb-2">500K</div>
-              <div className="text-muted-foreground">Unfilled Welding Jobs</div>
+              <div className="text-muted-foreground">Unfilled Manufacturing Jobs</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold gradient-text mb-2">Autonomous</div>
