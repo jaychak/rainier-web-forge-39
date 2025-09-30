@@ -3,13 +3,15 @@ import { ArrowRight, Play } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import CentaurWeldGrind from "@/assets/CentaurWeldGrind.png";
 import CentaurDrill from "@/assets/CentaurDrill1.png";
+import CentaurDrill2 from "@/assets/CentaurDrill-2.png";
 
 export const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
     CentaurWeldGrind,
-    CentaurDrill
+    CentaurDrill,
+    CentaurDrill2
   ];
 
   useEffect(() => {
