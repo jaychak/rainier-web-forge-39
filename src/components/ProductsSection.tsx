@@ -13,7 +13,7 @@ export const ProductsSection = () => {
             Our <span className="gradient-text">Products</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Advanced autonomous platforms designed for precision metalworking and inspection in challenging environments.
+            Advanced autonomous platforms designed for precision manufacturing work and inspection in challenging environments.
           </p>
         </div>
         
