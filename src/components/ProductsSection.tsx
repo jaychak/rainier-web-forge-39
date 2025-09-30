@@ -43,7 +43,7 @@ export const ProductsSection = () => {
                         Available Q4 2025
                       </Badge>
                       
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">Centaur Metal Working Platform</h3>
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">Centaur Autonomous Manufacturing Platform</h3>
                       
                       <div className="space-y-3 md:space-y-4 mb-6">
                         <div className="flex items-center gap-3">
@@ -56,7 +56,7 @@ export const ProductsSection = () => {
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
-                          <span className="text-sm md:text-base">Integrated welding arms and precision manufacturing tools</span>
+                          <span className="text-sm md:text-base">Integrated arms for precision manufacturing</span>
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
@@ -79,13 +79,13 @@ export const ProductsSection = () => {
                       <div className="aspect-square bg-gradient-to-br from-background to-muted/20 rounded-lg flex items-center justify-center p-6 md:p-8">
                         <img 
                           src="/lovable-uploads/69ce7302-a2d6-45c2-b953-5a2849e8682d.png"
-                          alt="Centaur Metal Working Platform"
+                          alt="Centaur Autonomous Manufacturing Platform"
                           className="w-full h-full object-contain"
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent rounded-lg flex items-end p-4 md:p-6">
                         <div className="text-xs md:text-sm text-muted-foreground">
-                          Centaur Metal Working Platform - Revolutionizing Metalwork
+                          Centaur Autonomous Manufacturing Platform - Revolutionizing Manufacturing
                         </div>
                       </div>
                     </div>
