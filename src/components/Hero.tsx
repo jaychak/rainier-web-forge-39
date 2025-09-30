@@ -71,7 +71,7 @@ export const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold gradient-text mb-2">Autonomous</div>
-              <div className="text-muted-foreground">Metalworking Platform</div>
+              <div className="text-muted-foreground">Manufacturing Platform</div>
             </div>
           </div>
         </div>
