@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import CentaurWeldGrind from "@/assets/CentaurWeldGrind.png";
-import CentaurDrill from "@/assets/CentaurDrill.png";
+import CentaurDrill from "@/assets/CentaurDrill1.png";
 import CentaurRivet from "@/assets/CentaurRivet.png";
 
 export const Hero = () => {
