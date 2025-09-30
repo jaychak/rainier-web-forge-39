@@ -44,7 +44,7 @@ export const TechnologySection = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Vertically integrated design and software. From advanced camera/LIDAR perception to specifically trained RL models for walking, 
-            we build every component in-house to scale autonomous metalworking platforms.
+            we build every component in-house to scale autonomous manufacturing platforms.
           </p>
         </div>
         
