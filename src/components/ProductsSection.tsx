@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ExternalLink, Download } from "lucide-react";
+import ZeusWeldingRobot from "@/assets/zeusWeldingRobot.png";
 
 export const ProductsSection = () => {
   return (
@@ -19,7 +20,7 @@ export const ProductsSection = () => {
         
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="centaur" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-8 h-12 bg-muted/50">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-12 bg-muted/50">
               <TabsTrigger 
                 value="centaur" 
                 className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
@@ -31,6 +32,12 @@ export const ProductsSection = () => {
                 className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
               >
                 Terrier Robot Dog
+              </TabsTrigger>
+              <TabsTrigger 
+                value="zeus" 
+                className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
+              >
+                Zeus 1
               </TabsTrigger>
             </TabsList>
             
@@ -146,6 +153,84 @@ export const ProductsSection = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent rounded-lg flex items-end p-4 md:p-6">
                         <div className="text-xs md:text-sm text-muted-foreground">
                           Terrier Robot Dog - Autonomous Inspection & Navigation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            
+            <TabsContent value="zeus" className="mt-0">
+              <Card className="bg-gradient-to-br from-card to-muted/20 border-border overflow-hidden">
+                <CardContent className="p-6 md:p-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
+                    <div>
+                      <Badge className="mb-4 bg-[#FDB913]/20 text-[#FDB913] border-[#FDB913]/30">
+                        Pre-Order Now
+                      </Badge>
+                      
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">Zeus 1 Welding Robot</h3>
+                      
+                      <div className="space-y-3 md:space-y-4 mb-6">
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                          <div>
+                            <span className="font-semibold text-sm md:text-base">Mobile Autonomous Welding</span>
+                            <p className="text-xs md:text-sm text-muted-foreground">Gasless MIG welding on a mobile robotic platform</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                          <div>
+                            <span className="font-semibold text-sm md:text-base">Precision Welding</span>
+                            <p className="text-xs md:text-sm text-muted-foreground">6-axis robotic arm with 922mm reach delivers repeatable, high-quality welds anywhere on the job site with all-terrain mobility</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                          <div>
+                            <span className="font-semibold text-sm md:text-base">Industrial-Grade Performance</span>
+                            <p className="text-xs md:text-sm text-muted-foreground">145A maximum output with dual voltage (110V/220V) capability handles a wide range of materials and thicknesses</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                          <div>
+                            <span className="font-semibold text-sm md:text-base">AI-Powered Control</span>
+                            <p className="text-xs md:text-sm text-muted-foreground">Intuitive ForgeOS software with drag-and-drop programming, real-time monitoring, and integrated vision system for seam tracking and quality inspection</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"></div>
+                          <div>
+                            <span className="font-semibold text-sm md:text-base">Flexible Power Options</span>
+                            <p className="text-xs md:text-sm text-muted-foreground">Operates on AC power umbilical with onboard battery backup, enabling deployment in diverse job site conditions</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+                        <Button size="lg" className="bg-[#FDB913] hover:bg-[#FDB913]/90 text-black font-semibold text-sm md:text-base">
+                          Pre-Order: $1,000 <ExternalLink className="ml-2 h-3 w-3 md:h-4 md:w-4" />
+                        </Button>
+                        <Button variant="outline" size="lg" className="border-border hover:bg-muted text-sm md:text-base">
+                          Reserve Day: $100
+                        </Button>
+                      </div>
+                    </div>
+                    
+                    <div className="relative order-first lg:order-last">
+                      <div className="aspect-square bg-gradient-to-br from-background to-muted/20 rounded-lg flex items-center justify-center p-6 md:p-8">
+                        <img 
+                          src={ZeusWeldingRobot}
+                          alt="Zeus 1 autonomous welding robot"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent rounded-lg flex items-end p-4 md:p-6">
+                        <div className="text-xs md:text-sm text-muted-foreground">
+                          Zeus 1 - Autonomous Mobile Welding Robot
                         </div>
                       </div>
                     </div>
