@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import CentaurWeldGrind from "@/assets/CentaurWeldGrind.png";
 import CentaurDrill from "@/assets/CentaurDrill1.png";
 import CentaurDrill2 from "@/assets/CentaurDrill-2.png";
+import WeldingRobot4 from "@/assets/weldingRobot4.png";
 
 export const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -11,7 +12,8 @@ export const Hero = () => {
   const images = [
     CentaurWeldGrind,
     CentaurDrill,
-    CentaurDrill2
+    CentaurDrill2,
+    WeldingRobot4
   ];
 
   useEffect(() => {
