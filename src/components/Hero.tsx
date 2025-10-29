@@ -11,10 +11,10 @@ export const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
+    WeldingRobot4,
     CentaurWeldGrind,
     CentaurDrill,
-    CentaurDrill2,
-    WeldingRobot4
+    CentaurDrill2
   ];
 
   useEffect(() => {
