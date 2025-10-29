@@ -19,8 +19,14 @@ export const ProductsSection = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          <Tabs defaultValue="centaur" className="w-full">
+          <Tabs defaultValue="zeus" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 h-12 bg-muted/50">
+              <TabsTrigger 
+                value="zeus" 
+                className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
+              >
+                Zeus 1
+              </TabsTrigger>
               <TabsTrigger 
                 value="centaur" 
                 className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
@@ -32,12 +38,6 @@ export const ProductsSection = () => {
                 className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
               >
                 Terrier Robot Dog
-              </TabsTrigger>
-              <TabsTrigger 
-                value="zeus" 
-                className="text-sm md:text-base py-2 px-4 data-[state=active]:bg-background data-[state=active]:text-foreground"
-              >
-                Zeus 1
               </TabsTrigger>
             </TabsList>
             
