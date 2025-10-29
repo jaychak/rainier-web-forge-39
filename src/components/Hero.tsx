@@ -5,6 +5,7 @@ import CentaurWeldGrind from "@/assets/CentaurWeldGrind.png";
 import CentaurDrill from "@/assets/CentaurDrill1.png";
 import CentaurDrill2 from "@/assets/CentaurDrill-2.png";
 import WeldingRobot4 from "@/assets/weldingRobot4.png";
+import Zeus1Robot from "@/assets/weldingRobot4.png";
 
 export const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -74,6 +75,42 @@ export const Hero = () => {
             <div className="text-center">
               <div className="text-4xl font-bold gradient-text mb-2">Autonomous</div>
               <div className="text-muted-foreground">Manufacturing Platform</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Zeus 1 Product Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <h2 className="text-5xl md:text-6xl font-bold">
+                <span className="gradient-text">Zeus 1</span>
+              </h2>
+              <h3 className="text-4xl md:text-5xl font-bold leading-tight">
+                Welding.<br />
+                Autonomous.<br />
+                24/7.
+              </h3>
+              <p className="text-xl text-muted-foreground">
+                MIG welding robot that moves, works, and never stops.
+              </p>
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Button size="lg" className="bg-[#FDB913] hover:bg-[#FDB913]/90 text-black font-semibold px-8">
+                  Pre-Order: $1,000
+                </Button>
+                <Button size="lg" variant="outline" className="font-semibold px-8">
+                  Reserve Day: $100
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src={Zeus1Robot}
+                alt="Zeus 1 autonomous welding robot"
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
