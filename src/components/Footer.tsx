@@ -23,8 +23,8 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm">
           <p>&copy; 2025 Rainier Labs. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="https://x.com/LabsRainier" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
-              <img src={xLogo} alt="X/Twitter" className="h-4 w-4" />
+            <a href="https://x.com/LabsRainier" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2 text-base">
+              <img src={xLogo} alt="X/Twitter" className="h-6 w-6" />
               Twitter/X
             </a>
           </div>
