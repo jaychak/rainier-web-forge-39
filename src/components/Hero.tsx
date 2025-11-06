@@ -96,7 +96,7 @@ export const Hero = () => {
               <p className="text-xl text-muted-foreground">
                 MIG welding robot that moves, works, and never stops.
               </p>
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-wrap gap-4 pt-4 scale-150 origin-left">
                 <div dangerouslySetInnerHTML={{
                   __html: `<stripe-buy-button
                     buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
@@ -107,12 +107,7 @@ export const Hero = () => {
               </div>
             </div>
             <div className="relative">
-              <img
-                src={Zeus1Robot}
-                alt="Zeus 1 autonomous welding robot"
-                className="w-full h-auto rounded-lg"
-              />
-              <p className="mt-4 text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Zeus-1: World&apos;s first mobile robotic welder. 1m reach, 6-axis precision, AI vision tracking. Drive it to your worksite, weld anywhere.
               </p>
             </div>
