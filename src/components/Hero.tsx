@@ -105,11 +105,11 @@ export const Hero = () => {
                   </stripe-buy-button>`
                 }} />
               </div>
-            </div>
-            <div className="relative">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xl text-muted-foreground mt-4">
                 Zeus-1: World&apos;s first mobile robotic welder. 1m reach, 6-axis precision, AI vision tracking. Drive it to your worksite, weld anywhere.
               </p>
+            </div>
+            <div className="relative">
             </div>
           </div>
         </div>
