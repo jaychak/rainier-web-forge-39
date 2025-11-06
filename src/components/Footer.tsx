@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import xLogo from "@/assets/x-logo.png";
+import instagramLogo from "@/assets/instagram-logo.png";
 
 export const Footer = () => {
   return (
@@ -26,6 +27,10 @@ export const Footer = () => {
             <a href="https://x.com/LabsRainier" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2 text-base">
               <img src={xLogo} alt="X/Twitter" className="h-6 w-6" />
               Twitter/X
+            </a>
+            <a href="https://www.instagram.com/rain.ierlabs/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2 text-base">
+              <img src={instagramLogo} alt="Instagram" className="h-6 w-6" />
+              Instagram
             </a>
           </div>
         </div>
