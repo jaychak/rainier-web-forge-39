@@ -16,7 +16,7 @@ export const Footer = () => {
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Transforming ideas into groundbreaking robotic solutions for lab, industry & home applications.
+              We're building the Physical AI stack for mobile robotic metalworking
             </p>
             
             <div className="space-y-4">
