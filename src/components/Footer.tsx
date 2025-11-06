@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import xLogo from "@/assets/x-logo.png";
 
 export const Footer = () => {
   return (
@@ -24,7 +23,10 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm">
           <p>&copy; 2025 Rainier Labs. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="https://x.com/LabsRainier" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Twitter/X</a>
+            <a href="https://x.com/LabsRainier" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+              <img src={xLogo} alt="X/Twitter" className="h-4 w-4" />
+              Twitter/X
+            </a>
           </div>
         </div>
       </div>
