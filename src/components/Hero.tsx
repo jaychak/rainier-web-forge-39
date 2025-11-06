@@ -96,7 +96,7 @@ export const Hero = () => {
               <p className="text-xl text-muted-foreground">
                 MIG welding robot that moves, works, and never stops.
               </p>
-              <div className="pt-8 pb-12 mb-8">
+              <div className="pt-8 pb-20 mb-12">
                 <div className="inline-block transform scale-125 origin-top-left" dangerouslySetInnerHTML={{
                   __html: `<stripe-buy-button
                     buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
