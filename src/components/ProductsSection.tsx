@@ -166,8 +166,8 @@ export const ProductsSection = () => {
                 <CardContent className="p-6 md:p-8">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
                     <div>
-                      <Badge className="mb-4 bg-[#FDB913]/20 text-[#FDB913] border-[#FDB913]/30">
-                        Pre-Order Now
+                      <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">
+                        Pre-Order: $100
                       </Badge>
                       
                       <h3 className="text-2xl md:text-3xl font-bold mb-4">Zeus 1 Welding Robot</h3>
@@ -211,12 +211,13 @@ export const ProductsSection = () => {
                       </div>
                       
                       <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                        <Button size="lg" className="bg-[#FDB913] hover:bg-[#FDB913]/90 text-black font-semibold text-sm md:text-base">
-                          Pre-Order: $1,000 <ExternalLink className="ml-2 h-3 w-3 md:h-4 md:w-4" />
-                        </Button>
-                        <Button variant="outline" size="lg" className="border-border hover:bg-muted text-sm md:text-base">
-                          Reserve Day: $100
-                        </Button>
+                        <div dangerouslySetInnerHTML={{
+                          __html: `<stripe-buy-button
+                            buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
+                            publishable-key="pk_live_51PVEaoKtSa48KsEIGAScNJciZ1bPtV9X6Shz13iGZ0pN4ZcwIk1OXbImz3wh2oVsbqJyQ9L5Z1HAeZJeWiB97lIk00TapxenkZ"
+                          >
+                          </stripe-buy-button>`
+                        }} />
                       </div>
                     </div>
                     
