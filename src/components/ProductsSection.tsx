@@ -211,13 +211,15 @@ export const ProductsSection = () => {
                       </div>
                       
                       <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                        <div dangerouslySetInnerHTML={{
-                          __html: `<stripe-buy-button
-                            buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
-                            publishable-key="pk_live_51PVEaoKtSa48KsEIGAScNJciZ1bPtV9X6Shz13iGZ0pN4ZcwIk1OXbImz3wh2oVsbqJyQ9L5Z1HAeZJeWiB97lIk00TapxenkZ"
-                          >
-                          </stripe-buy-button>`
-                        }} />
+                        <Button 
+                          size="lg" 
+                          className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg md:text-xl px-8 py-6"
+                          asChild
+                        >
+                          <a href="https://buy.stripe.com/dRmfZi4Fm1dVdqn4EP67S03" target="_blank" rel="noopener noreferrer">
+                            Pre-Order: $100 <ExternalLink className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                          </a>
+                        </Button>
                       </div>
                     </div>
                     
