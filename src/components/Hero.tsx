@@ -112,6 +112,9 @@ export const Hero = () => {
                 alt="Zeus 1 autonomous welding robot"
                 className="w-full h-auto rounded-lg"
               />
+              <p className="mt-4 text-sm text-muted-foreground">
+                Zeus-1: &apos;World&apos;s first mobile robotic welder. 6-axis arm with 1m reach delivers precision welds anywhere. AI-powered ForgeOS with vision tracking. All-terrain mobility takes the robot to your part.&apos;
+              </p>
             </div>
           </div>
         </div>
