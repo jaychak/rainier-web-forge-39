@@ -83,7 +83,7 @@ export const Hero = () => {
       {/* Zeus 1 Product Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6">
               <h2 className="text-5xl md:text-6xl font-bold">
                 <span className="gradient-text">Zeus-1: Pre-Order Now</span>
@@ -96,8 +96,8 @@ export const Hero = () => {
               <p className="text-xl text-muted-foreground">
                 MIG welding robot that moves, works, and never stops.
               </p>
-              <div className="pt-8 pb-20 mb-12">
-                <div className="inline-block transform scale-125 origin-top-left" dangerouslySetInnerHTML={{
+              <div className="pt-8 pb-20 mb-12 flex justify-center">
+                <div className="inline-block transform scale-125" dangerouslySetInnerHTML={{
                   __html: `<stripe-buy-button
                     buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
                     publishable-key="pk_live_51PVEaoKtSa48KsEIGAScNJciZ1bPtV9X6Shz13iGZ0pN4ZcwIk1OXbImz3wh2oVsbqJyQ9L5Z1HAeZJeWiB97lIk00TapxenkZ"
@@ -108,8 +108,6 @@ export const Hero = () => {
               <p className="text-xl text-muted-foreground">
                 Zeus-1: World&apos;s first mobile robotic welder. 1m reach, 6-axis precision, AI vision tracking. Drive it to your worksite, weld anywhere.
               </p>
-            </div>
-            <div className="relative">
             </div>
           </div>
         </div>
