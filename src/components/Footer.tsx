@@ -17,19 +17,6 @@ export const Footer = () => {
           <p className="text-muted-foreground mb-6 max-w-md">
             We're building the Physical AI stack for mobile robotic metalworking
           </p>
-          
-          <div className="space-y-4">
-            <h4 className="font-semibold">Stay Updated</h4>
-            <div className="flex gap-2 max-w-sm">
-              <Input 
-                placeholder="Enter your email" 
-                className="bg-muted border-border"
-              />
-              <Button className="bg-primary hover:bg-primary/90">
-                Subscribe
-              </Button>
-            </div>
-          </div>
         </div>
         
         <Separator className="my-8" />
