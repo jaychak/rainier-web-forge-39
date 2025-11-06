@@ -15,7 +15,7 @@ export const SolutionSection = () => {
           <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20">
             <div className="text-center mb-12">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 250+kg whilst navigating complex environments wheeled platforms cannot.
+                Traditional industrial robots are anchored in place. Humanoid robots max out at 5-10kg payloads due to fundamental support polygon constraints. The Centaur changes the equation. Our four-legged wheeled platform delivers 250+kg payload capacity while navigating the complex, unstructured environments that wheeled systems can't handle. Purpose-built for welding and heavy industrial manipulation where stationary robots can't reach and wheeled platforms can't go.
               </p>
             </div>
 
