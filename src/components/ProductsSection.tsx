@@ -70,16 +70,6 @@ export const ProductsSection = () => {
                           <span className="text-sm md:text-base">Full-body sensing and motion planning for complex environments</span>
                         </div>
                       </div>
-                      
-                      <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base">
-                          Reserve Centaur <ExternalLink className="ml-2 h-3 w-3 md:h-4 md:w-4" />
-                        </Button>
-                        <Button variant="outline" size="lg" className="border-border hover:bg-muted text-sm md:text-base">
-                          <Download className="mr-2 h-3 w-3 md:h-4 md:w-4" />
-                          View Brochure
-                        </Button>
-                      </div>
                     </div>
                     
                     <div className="relative order-first lg:order-last">
