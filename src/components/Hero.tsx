@@ -86,7 +86,7 @@ export const Hero = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="space-y-6">
               <h2 className="text-5xl md:text-6xl font-bold">
-                <span className="gradient-text">Zeus 1</span>
+                <span className="gradient-text">Zeus-1: Pre-Order Now</span>
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold leading-tight">
                 Welding.<br />
