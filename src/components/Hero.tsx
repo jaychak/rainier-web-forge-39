@@ -97,12 +97,13 @@ export const Hero = () => {
                 MIG welding robot that moves, works, and never stops.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button size="lg" className="bg-[#FDB913] hover:bg-[#FDB913]/90 text-black font-semibold px-8">
-                  Pre-Order: $1,000
-                </Button>
-                <Button size="lg" variant="outline" className="font-semibold px-8">
-                  Reserve Day: $100
-                </Button>
+                <div dangerouslySetInnerHTML={{
+                  __html: `<stripe-buy-button
+                    buy-button-id="buy_btn_1SQXvgKtSa48KsEIFPiGwZo1"
+                    publishable-key="pk_live_51PVEaoKtSa48KsEIGAScNJciZ1bPtV9X6Shz13iGZ0pN4ZcwIk1OXbImz3wh2oVsbqJyQ9L5Z1HAeZJeWiB97lIk00TapxenkZ"
+                  >
+                  </stripe-buy-button>`
+                }} />
               </div>
             </div>
             <div className="relative">
