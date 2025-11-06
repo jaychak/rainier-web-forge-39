@@ -14,11 +14,6 @@ export const SolutionSection = () => {
         <div className="mb-16 max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20">
             <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Breaking Physical Limitations
-                </span>
-              </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Traditional industrial robots are stationary. Humanoids max out at 5-10kg due to support polygon limitations. Our four-legged-wheeled design carries 250+kg whilst navigating complex environments wheeled platforms cannot.
               </p>
@@ -68,20 +63,12 @@ export const SolutionSection = () => {
               </div>
             </div>
 
-            <div className="text-center mb-8">
+            <div className="text-center">
               <div className="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl p-6 border border-primary/30">
                 <p className="text-lg font-semibold text-foreground">
-                  Centaur's support polygon is greater than 4x larger than humanoid footprints, keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
+                  Centaur&apos;s support polygon is greater than 4x larger than humanoid footprints, keeping the center of mass stable even with heavy industrial payloads that would tip over two-legged robots.
                 </p>
               </div>
-            </div>
-
-            <div className="text-center">
-              <img 
-                src="/lovable-uploads/5ce270f4-5558-4bbc-8b22-178e2d548355.png"
-                alt="Why a Quadruped Outperforms a Humanoid for Industrial Load Carrying - Greater stability and larger support polygon"
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
             </div>
           </div>
         </div>
