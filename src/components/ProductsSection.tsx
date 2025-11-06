@@ -72,7 +72,7 @@ export const ProductsSection = () => {
                       </div>
                     </div>
                     
-                    <div className="relative order-first lg:order-last">
+                    <div className="order-first lg:order-last">
                       <div className="aspect-square bg-gradient-to-br from-background to-muted/20 rounded-lg flex items-center justify-center p-6 md:p-8">
                         <img 
                           src="/lovable-uploads/69ce7302-a2d6-45c2-b953-5a2849e8682d.png"
@@ -80,7 +80,7 @@ export const ProductsSection = () => {
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent rounded-lg flex items-end p-4 md:p-6">
+                      <div className="mt-4 text-center">
                         <div className="text-xs md:text-sm text-muted-foreground">
                           Centaur Autonomous Manufacturing Platform - Revolutionizing Manufacturing
                         </div>
