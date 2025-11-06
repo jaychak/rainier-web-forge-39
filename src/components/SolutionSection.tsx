@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import centaurImage from "@/assets/centaur3.png";
 
 export const SolutionSection = () => {
   return (
@@ -14,6 +15,11 @@ export const SolutionSection = () => {
         <div className="mb-16 max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20">
             <div className="text-center mb-12">
+              <img 
+                src={centaurImage}
+                alt="Centaur robot with dual arms and four-legged wheeled platform"
+                className="w-full max-w-2xl mx-auto mb-8 rounded-lg shadow-2xl"
+              />
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Traditional industrial robots are anchored in place. Humanoid robots max out at 5-10kg payloads due to fundamental support polygon constraints. The Centaur changes the equation. Our four-legged wheeled platform delivers 250+kg payload capacity while navigating the complex, unstructured environments that wheeled systems can't handle. Purpose-built for welding and heavy industrial manipulation where stationary robots can't reach and wheeled platforms can't go.
               </p>
