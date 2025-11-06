@@ -6,15 +6,13 @@ export const Footer = () => {
   return (
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 py-16">
-        <div className="col-span-1 md:col-span-2 max-w-md">
-          <div className="flex items-center space-x-2 mb-4">
-            <img 
-              src="/lovable-uploads/d2120570-ec71-47ea-95c6-a085c9571cbe.png" 
-              alt="Rainier Labs" 
-              className="h-8"
-            />
-          </div>
-          <p className="text-muted-foreground mb-6 max-w-md">
+        <div className="flex items-center gap-4">
+          <img 
+            src="/lovable-uploads/d2120570-ec71-47ea-95c6-a085c9571cbe.png" 
+            alt="Rainier Labs" 
+            className="h-8"
+          />
+          <p className="text-muted-foreground">
             We're building the Physical AI stack for mobile robotic metalworking
           </p>
         </div>
